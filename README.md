@@ -90,7 +90,7 @@ Open the ZIP file saved locally and confirm that the text files and attachments 
 
 
 
-Command Options
+## ✨ Command Options
 
 Here’s a list of available options to customize your backup:
 
