@@ -20,6 +20,8 @@ Perfect for server owners who need reliable data preservation without cluttering
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+# STEP BY STEP
+
 
 This guide provides a detailed process for implementing the Discord backup bot, designed to back up channels and threads (public and private) accessible to the user executing the command. The bot uses the discord.py library and supports exporting text messages and attachments (e.g., images). Follow the steps below to set up and run the bot from scratch.
 
