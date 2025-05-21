@@ -59,10 +59,10 @@ Edit the bot's role (e.g., "BackupBot") and enable the Administrator permissions
 
 ### 5. Run the Bot
 
-In the terminal, navigate to the directory containing the discord_backup.py file.
+In the terminal, navigate to the directory containing the DiscordChatExporterFreeBrazuka.py file.
 Run the bot directly on your machine:
 ```
-python3 DiscordBackupBot.py
+python3 DiscordChatExporterFreeBrazuka.py
 ```
  
 The bot should display in the terminal: Bot connected as <bot_name>. This means the bot is active and ready to receive commands on Discord.
