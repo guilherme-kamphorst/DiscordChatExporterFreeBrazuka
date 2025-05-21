@@ -1,4 +1,4 @@
-# DiscordBackupBot
+# Discord Chat Exporter Free Brazuka
 
 ![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -25,7 +25,7 @@ Follow these steps to set up and run the bot from scratch.
 ### 1. Create an Application and Bot in the Developer Portal
 
 1. Visit [Discord Developer Portal](https://discord.com/developers/applications).
-2. Click **New Application**, name it (e.g., "BackupBot"), and create it.
+2. Click **New Application**, name it (e.g., "ExporterBot"), and create it.
 3. Go to the **Bot** tab and click **Copy** under **Token** (keep this private).
 4. Enable the following under **Bot > Privileged Gateway Intents**:
    - Server Members Intent
@@ -48,8 +48,8 @@ pip install discord.py aiohttp
 
 ### 3. Configure the Bot Code
 
-Create a file named DiscordBackupBot.py in your chosen directory.
-Copy the code from DiscordBackupBot.py in this repository.
+Create a file named DiscordChatExporterFreeBrazuka.py in your chosen directory.
+Copy the code from DiscordChatExporterFreeBrazuka.py in this repository.
 Replace INSERT TOKEN HERE (last line of the code) with the token you copied in Step 1.
 
 ### 4. Configure Permissions on the Server
