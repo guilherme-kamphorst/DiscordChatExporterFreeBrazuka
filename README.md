@@ -40,83 +40,23 @@ Ensure Python 3.6+ is installed:
 python3 --version
 ```
 
-
-
-# DiscordBackupBot
-A Python-based Discord bot for server admins to back up channels, threads, and attachments. Features: select channels, exclude others, include threads, limit messages, and save locally as ZIP. Thread attachments are organized in threads/attachments/. 
-
-Welcome to DiscordBackupBot, a powerful and customizable Discord bot built to help server administrators securely back up their channels, threads, and attachments. Written in Python using the discord.py library, this bot allows you to:
-
-    Back up all accessible channels or specify individual ones with the --channels option.
-    Exclude specific channels using --exclude-channels for granular control.
-    Include active and archived threads (public and private) with --threads.
-    Download attachments (e.g., images, files) and organize them by channel and thread.
-    Limit message counts per channel with --limit to manage backup size.
-    Save backups locally as ZIP files for easy access and storage.
-
-Key features include:
-
-    Thread attachments are neatly stored in threads/attachments/ within the channel folder.
-    Backups are always saved locally (no Discord uploads), avoiding nested ZIP issues.
-    Fully configurable with administrator permissions required for security.
-
-Perfect for server owners who need reliable data preservation without cluttering Discord with large files. Contribute, report issues, or suggest features on our GitHub page!
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# STEP BY STEP
-
-
-This guide provides a detailed process for implementing the Discord backup bot, designed to back up channels and threads (public and private) accessible to the user executing the command. The bot uses the discord.py library and supports exporting text messages and attachments (e.g., images). Follow the steps below to set up and run the bot from scratch.
-
-Step-by-Step Implementation
-
-1. Create an Application and Bot in the Developer Portal
-
-Visit the https://discord.com/developers/applications
-
-Click New Application, provide a name (e.g., "BackupBot"), and create the application.
-
-Click in the Bot tab.
-
-In Token, click Copy (do not share the token publicly). 
-
-Replace INSERT TOKEN HERE in the bot code with this token at the end of the process.
-
-Enable the required Intents:
-
-Enable Server Members Intent and Message Content Intent under Bot > Privileged Gateway Intents.
-In OAuth2 > URL Generator, select the bot scope and add Administrator permission.
-Generate the invite link and use it to add the bot to your server.
-
-
-
-2. Install Dependencies on Your Machine
-
-Open a terminal and ensure Python is installed by running:
-
-python3 --version
-
 Install the required dependencies directly on your machine:
-
+```
 pip install discord.py aiohttp
+```
 
 
 
-3. Create and Configure the Bot Code
+3. Configure the Bot Code
 
-Create a file named DiscordBackupBot.py in a directory of your choice (e.g., your home directory or a project folder) and download the code of DiscordBackupbot.py or just download the file.
-
-Replace the placeholder INSERT TOKEN HERE (located on the final line of the code) with the token you copied in Step 1, and insert it at the end of the bot code.
+    Create a file named DiscordBackupBot.py in your chosen directory.
+    Copy the code from DiscordBackupBot.py in this repository.
+    Replace INSERT TOKEN HERE (last line of the code) with the token you copied in Step 1.
 
 4. Configure Permissions on the Server
 
 In the Discord server, go to Server Settings > Roles.
-Edit the bot's role (e.g., "BackupBot") and enable the Administrator permissions
-For private channels (e.g., #testebackup), adjust specific permissions:
-
-Go to the channel settings > Permissions.
-Add the bot's role and enable View Channel and Read Message History.
+Edit the bot's role (e.g., "BackupBot") and enable the Administrator permissions.
 
 5. Run the Bot
 
