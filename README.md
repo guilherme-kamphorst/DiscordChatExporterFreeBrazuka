@@ -30,9 +30,15 @@ Step-by-Step Implementation
 1. Create an Application and Bot in the Developer Portal
 
 Visit the https://discord.com/developers/applications
+
 Click New Application, provide a name (e.g., "BackupBot"), and create the application.
+
 Click in the Bot tab.
-In Token, click Copy (do not share the token publicly). Replace INSERT TOKEN HERE in the bot code with this token at the end of the process.
+
+In Token, click Copy (do not share the token publicly). 
+
+Replace INSERT TOKEN HERE in the bot code with this token at the end of the process.
+
 Enable the required Intents:
 
 Enable Server Members Intent and Message Content Intent under Bot > Privileged Gateway Intents.
