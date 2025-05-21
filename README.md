@@ -46,43 +46,43 @@ pip install discord.py aiohttp
 ```
 
 
+### 3. Configure the Bot Code
 
-3. Configure the Bot Code
+Create a file named DiscordBackupBot.py in your chosen directory.
+Copy the code from DiscordBackupBot.py in this repository.
+Replace INSERT TOKEN HERE (last line of the code) with the token you copied in Step 1.
 
-    Create a file named DiscordBackupBot.py in your chosen directory.
-    Copy the code from DiscordBackupBot.py in this repository.
-    Replace INSERT TOKEN HERE (last line of the code) with the token you copied in Step 1.
-
-4. Configure Permissions on the Server
+### 4. Configure Permissions on the Server
 
 In the Discord server, go to Server Settings > Roles.
 Edit the bot's role (e.g., "BackupBot") and enable the Administrator permissions.
 
-5. Run the Bot
+### 5. Run the Bot
 
 In the terminal, navigate to the directory containing the discord_backup.py file.
 Run the bot directly on your machine:
-
+```
 python3 DiscordBackupBot.py
-
+```
+ 
 The bot should display in the terminal: Bot connected as <bot_name>. This means the bot is active and ready to receive commands on Discord.
 
-6. Backup with Bot
+### 6. Backup with Bot
 
 Here are two examples to test different scenarios:
 
 Backup a specific channel with threads and attachments: Type in Discord:
-
+```
 !backup --attachments --threads --channels testebackup
-
+```
 This will back up the #testebackup channel, including all threads (active and archived) and attachments (e.g., photos).
 
 The bot will respond with messages like "Starting backup..." and "Processing channel #testebackup...".
 
 Backup all channels except specific ones, with threads: Type:
-
+```
 !backup --attachments --threads --exclude-channels geral
-
+```
 This will back up all channels you have access to, except #geral, including threads and attachments.
 
 Check if the bot responds with messages like "Starting backup..." and "Backup completed!".
