@@ -1,4 +1,48 @@
 # DiscordBackupBot
+
+![Python](https://img.shields.io/badge/Python-3.6%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202025-orange)
+
+A powerful and customizable Discord bot for server admins to back up channels, threads, and attachments. Built with Python and `discord.py`, this bot saves backups locally as ZIP files, organizing thread attachments in `threads/attachments/`.
+
+## ✨ Features
+
+- Back up all accessible channels or select specific ones with `--channels`.
+- Exclude channels using `--exclude-channels` for precise control.
+- Include active and archived threads (public/private) with `--threads`.
+- Download attachments (e.g., images, files) and organize them by channel/thread.
+- Limit messages per channel with `--limit` to manage backup size.
+- Saves backups locally—no Discord uploads, avoiding nested ZIP issues.
+- Requires administrator permissions for security.
+
+Perfect for server owners who need reliable data preservation!
+
+## 🚀 Getting Started
+
+Follow these steps to set up and run the bot from scratch.
+
+### 1. Create an Application and Bot in the Developer Portal
+
+1. Visit [Discord Developer Portal](https://discord.com/developers/applications).
+2. Click **New Application**, name it (e.g., "BackupBot"), and create it.
+3. Go to the **Bot** tab and click **Copy** under **Token** (keep this private).
+4. Enable the following under **Bot > Privileged Gateway Intents**:
+   - Server Members Intent
+   - Message Content Intent
+5. In **OAuth2 > URL Generator**, select **bot** scope, add **Administrator** permission, generate the invite link, and add the bot to your server.
+
+### 2. Install Dependencies
+
+Ensure Python 3.6+ is installed:
+
+```bash
+python3 --version
+```
+
+
+
+# DiscordBackupBot
 A Python-based Discord bot for server admins to back up channels, threads, and attachments. Features: select channels, exclude others, include threads, limit messages, and save locally as ZIP. Thread attachments are organized in threads/attachments/. 
 
 Welcome to DiscordBackupBot, a powerful and customizable Discord bot built to help server administrators securely back up their channels, threads, and attachments. Written in Python using the discord.py library, this bot allows you to:
